@@ -187,7 +187,7 @@ module.exports = function (eleventyConfig) {
     dataTemplateEngine: 'njk',
     passthroughFileCopy: true,
     dir: {
-      output: 'site',
+      output: 'dist',
       input: 'src',
       includes: '_includes',
       layouts: '_layouts',

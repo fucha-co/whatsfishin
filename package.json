@@ -32,7 +32,7 @@
     "eleventy:build": "cross-env NODE_ENV=production eleventy",
     "eleventy:watch": "cross-env NODE_ENV=development eleventy --serve",
     "sw:build": "rollup --config rollup-service-worker.config.js && workbox injectManifest workbox.config.js",
-    "build": "npm-run-all --sequential clean assets:build eleventy:build sw:build",
+    "build": "NODE_ENV=production npm-run-all --sequential clean assets:build eleventy:build sw:build",
     "debug:build": "DEBUG=Eleventy* npm run build",
     "watch": "npm-run-all -p css:watch js:watch eleventy:watch",
     "start": "npm-run-all --sequential clean assets:build watch",
