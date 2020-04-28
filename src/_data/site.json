@@ -1,0 +1,12 @@
+{
+    "name": "What's Fishin",
+    "blurb": "The best fish & chips in Melbourne",
+    "lang": "en",
+    "locale": "en_US",
+    "domain": "whatsfishin.com",
+    "url": "https://www.whatsfishin.com",
+    "repo": "https://github.com/stoqe/whatsfishin",
+    "suburb": "Clifton Hill",
+    "address": "38 Berry St, Clifton Hill VIC 3068",
+    "phone": "+61394890214"
+}
