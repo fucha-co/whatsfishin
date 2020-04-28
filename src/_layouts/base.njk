@@ -9,8 +9,10 @@
   data-img-dist="{{ page.outputPath | dirname }}/"
 >
 
-{% include "hero.njk" %}
-{% include "footer.njk" %}
+  {% include "hero.njk" %}
+  {% include 'fans.njk' %}
+  {% include "footer.njk" %}
+  
 <!--div class="page">
   {# 
   Use Every Layout's sidebar layout:
