@@ -11,15 +11,25 @@ mark {padding: 0.25rem 0.5rem}
 .bangers { font-family: 'Bangers', sans-serif; }
 .bangers mark {padding: 0.25rem 1rem}
 
-.text-huge { font-size: 12rem; }
+.text-huge { font-size: 6rem; }
+@media (min-width: 640px) { .text-huge { font-size: 8rem; } }
+/* Medium (md) */
+@media (min-width: 768px) { .text-huge { font-size: 8rem; } }
+/* Large (lg) */
+@media (min-width: 1024px) { .text-huge { font-size: 12rem; } }
+/* Extra Large (xl) */
+@media (min-width: 1280px) { .text-huge { font-size: 12rem; } }
+
 .text-yellow,
 a:hover.text-yellow { color: yellow; }
+.bg-blue { background-color: #7BDFF2; }
 .bg-yellow { background-color: yellow; }
-.bg-blue { background-color: #03256C; }
+.border-yellow { border-color: yellow; }
+.border-red { border-color: red; }
 a.phone { 
     background-color: #FFB8D1; 
 }
-.fans, mark.fans { background-color: #25CED1; }
+.fans, mark.fans { background-color: #7BDFF2; }
 mark.fans { padding: 0.75rem 0.75rem;}
 
 .svg-icon {

@@ -10,7 +10,9 @@
     "suburb": "Clifton Hill",
     "state": "VIC",
     "post": "3068",
-    "phone": "03 9489 0214",
+    "phone": "(03) 9489 0214",
     "tel": "+61394890214",
-    "squaresite": "https://whatsfishin.square.site/"
+    "squaresite": "https://whatsfishin.square.site/",
+    "phoneorderbtn": "Phone Order",
+    "onlineorderbtn": "Order Online"
 }

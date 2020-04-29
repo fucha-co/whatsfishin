@@ -67,40 +67,40 @@
     <div class="mt-0 md:mt-10 lg:mt-10 xl:mt-10 mx-auto max-w-screen-xl px-4 sm:mt-12 sm:px-6">
       <div class="text-center">
         
-        <div class="mb-0 text-sm font-semibold lowercase tracking-wide text-gray-500 sm:text-base lg:text-sm xl:text-base">
+        <div class="mb-10 text-sm font-semibold lowercase tracking-wide text-gray-500 sm:text-base lg:text-sm xl:text-base">
             <mark>{{ site.domain }}</mark>
         </div>
         
-        <h1 class="mt-8 mb-0 bangers text-huge tracking-wide leading-none font-extrabold text-gray-900">
+        <h1 class="mt-0 mb-8 sm:mb-2 bangers text-huge tracking-wide leading-none font-extrabold text-gray-900">
           {{ site.name }}
           <!--span class="text-indigo-600">online business</span-->
         </h1>
         
-        <h2 class="bangers mt-0 mx-auto text-6xl text-indigo-500 sm:text-6xl md:text-6xl">
+        <h2 class="bangers mt-0 mx-auto text-4xl text-indigo-500 sm:text-6xl md:text-6xl">
           <mark>{{ site.blurb }}</mark>
         </h2>
 
-        <h3 class="text-3xl mt-4 leading-8 font-normal text-gray-900 tracking-tight sm:text-3xl sm:leading-9">
+        <h3 class="mt-4 text-xl sm:text-3xl sm:leading-9 leading-8 font-normal text-gray-900 tracking-tight ">
           {{ site.street }}, {{ site.suburb }} &middot; {{ site.post }}
         </h3>
 
-        <h4 class="text-xl mt-4 leading-8 font-extrabold text-gray-900 tracking-tight sm:text-3xl sm:leading-9">
-          {{ site.phone }}
+        <h4 class="mt-4 text-xl leading-8 sm:text-3xl sm:leading-9 font-black text-gray-900 tracking-tight ">
+          <a href="tel:{{ site.tel }}" class="border-b-2 border-dotted">{{ site.phone }}</a>
         </h4>
 
         <div class="mt-5 max-w-3xl mx-auto sm:flex sm:justify-center md:mt-8 uppercase">
           <div class="rounded-md shadow">
-            <a href="tel:{{ site.tel }}" class="w-full flex items-center justify-center px-10 py-4 text-2xl leading-6 font-medium rounded-md text-white hover:text-black border-2 border-yellow hover:border-transparent bg-black hover:bg-white shadow transition duration-150 ease-in-out">
+            <a href="tel:{{ site.tel }}" class="w-full flex items-center justify-center px-10 py-4 text-xl leading-6 font-medium rounded-md text-black hover:text-black border-4 border-black hover:border-transparent bg-blue hover:bg-gray-200 transition duration-150 ease-in-out">
               <div class="flex items-center justify-center h-12 w-12 text-white">
                 <span class="text-4xl mr-4" role="image" aria-label="telephone">☎️</span>
-            </div> Phone order
+            </div> {{ site.phoneorderbtn }}
             </a>
           </div>
           <div class="mt-3 rounded-md shadow sm:mt-0 sm:ml-3">
-            <a href="{{ site.squaresite }}" target="_blank" class="w-full flex items-center justify-center px-10 py-4 text-2xl leading-6 font-medium rounded-md text-black hover:text-black border-2 border-black hover:border-transparent bg-yellow hover:bg-white shadow transition duration-150 ease-in-out">
+            <a href="{{ site.squaresite }}" target="_blank" class="w-full flex items-center justify-center px-10 py-4 text-xl leading-6 font-medium rounded-md text-black hover:text-black border-4 border-black hover:border-transparent bg-yellow hover:bg-gray-200 transition duration-150 ease-in-out">
               <div class="flex items-center justify-center h-12 w-12 text-3xl">
                   <span class="text-5xl mr-4" role="image" aria-label="shopping trolley">💳</span>
-                </div> Order online
+                </div> {{ site.onlineorderbtn }}
             </a>
           </div>
         </div>
