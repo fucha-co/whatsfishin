@@ -12,6 +12,14 @@ module.exports = function (eleventyConfig) {
     });
   });
 
+  // Collections: Reviews
+  //config.addCollection('reviews', function (collection) {
+    //return collection.getFilteredByTag('reviews').sort(function (a, b) {
+      //  return a.data.order - b.data.order
+    //})
+  //});
+
+
   // ------------------------------------------------------------------------
   // Filters
   // ------------------------------------------------------------------------

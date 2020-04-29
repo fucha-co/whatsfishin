@@ -1,0 +1,20 @@
+<section class="mt-20">
+  <div class="max-w-screen-xl mx-auto md:grid md:grid-cols-3 md:px-6 lg:px-8">
+
+    {% for review in collections.reviews %}
+    
+        <div class="py-12 px-4 md:flex md:flex-col md:border-0">
+          <blockquote class="mt-8 md:flex-grow md:flex md:flex-col">
+              <div class="relative text-4xl leading-snug font-medium text-black md:flex-grow">
+              <p class="bangers relative">
+                  <mark class="fans">{{ review.data.quote }}</mark>
+                  <span class="block mt-2 text-gray-600">—{{ review.data.by }}</span>
+              </p>
+              </div>
+          </blockquote>
+        </div>
+
+    {% endfor %}
+
+  </div>
+</section>

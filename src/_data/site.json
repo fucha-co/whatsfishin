@@ -6,7 +6,11 @@
     "domain": "whatsfishin.com",
     "url": "https://www.whatsfishin.com",
     "repo": "https://github.com/stoqe/whatsfishin",
+    "street": "38 Berry Street",
     "suburb": "Clifton Hill",
-    "address": "38 Berry St, Clifton Hill VIC 3068",
-    "phone": "+61394890214"
+    "state": "VIC",
+    "post": "3068",
+    "phone": "03 9489 0214",
+    "tel": "+61394890214",
+    "squaresite": "https://whatsfishin.square.site/"
 }

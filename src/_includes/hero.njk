@@ -64,50 +64,43 @@
 
     
 
-    <div class="mt-10 mx-auto max-w-screen-xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 xl:mt-28">
+    <div class="mt-0 md:mt-10 lg:mt-10 xl:mt-10 mx-auto max-w-screen-xl px-4 sm:mt-12 sm:px-6">
       <div class="text-center">
-        <div class="text-sm font-semibold lowercase tracking-wide text-gray-500 sm:text-base lg:text-sm xl:text-base">
-            <mark>&nbsp;{{ site.domain }}&nbsp;</mark>
+        
+        <div class="mb-0 text-sm font-semibold lowercase tracking-wide text-gray-500 sm:text-base lg:text-sm xl:text-base">
+            <mark>{{ site.domain }}</mark>
         </div>
         
-        <h1 class="bangers text-huge text-4xl tracking-wide leading-tight font-extrabold text-gray-900">
-          {{ site.name }}!
+        <h1 class="mt-8 mb-0 bangers text-huge tracking-wide leading-none font-extrabold text-gray-900">
+          {{ site.name }}
           <!--span class="text-indigo-600">online business</span-->
         </h1>
         
         <h2 class="bangers mt-0 mx-auto text-6xl text-indigo-500 sm:text-6xl md:text-6xl">
-          <mark>&nbsp;{{ site.blurb }}&nbsp;</mark>
+          <mark>{{ site.blurb }}</mark>
         </h2>
 
-        <h4 class="text-2xl mt-4 leading-8 font-extrabold text-gray-900 tracking-tight sm:text-3xl sm:leading-9">
-          {{ site.address }}
+        <h3 class="text-3xl mt-4 leading-8 font-normal text-gray-900 tracking-tight sm:text-3xl sm:leading-9">
+          {{ site.street }}, {{ site.suburb }} &middot; {{ site.post }}
+        </h3>
+
+        <h4 class="text-xl mt-4 leading-8 font-extrabold text-gray-900 tracking-tight sm:text-3xl sm:leading-9">
+          {{ site.phone }}
         </h4>
 
-        <div class="mt-5 max-w-3xl mx-auto sm:flex sm:justify-center md:mt-8">
+        <div class="mt-5 max-w-3xl mx-auto sm:flex sm:justify-center md:mt-8 uppercase">
           <div class="rounded-md shadow">
-            <a href="#" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:shadow-outline-indigo transition duration-150 ease-in-out md:py-4 md:text-xl md:px-10">
-              <div class="flex items-center justify-center h-12 w-12 text-white text-xl">
-                  <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-						<g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-							<g id="icon-shape">
-								<path d="M11.1735916,16.8264084 C7.57463481,15.3079672 4.69203285,12.4253652 3.17359164,8.82640836 L5.29408795,6.70591205 C5.68612671,6.31387329 6,5.55641359 6,5.00922203 L6,0.990777969 C6,0.45097518 5.55237094,3.33066907e-16 5.00019251,3.33066907e-16 L1.65110039,3.33066907e-16 L1.00214643,8.96910337e-16 C0.448676237,1.13735153e-15 -1.05725384e-09,0.445916468 -7.33736e-10,1.00108627 C-7.33736e-10,1.00108627 -3.44283713e-14,1.97634814 -3.44283713e-14,3 C-3.44283713e-14,12.3888407 7.61115925,20 17,20 C18.0236519,20 18.9989137,20 18.9989137,20 C19.5517984,20 20,19.5565264 20,18.9978536 L20,18.3488996 L20,14.9998075 C20,14.4476291 19.5490248,14 19.009222,14 L14.990778,14 C14.4435864,14 13.6861267,14.3138733 13.2940879,14.7059121 L11.1735916,16.8264084 Z" id="Combined-Shape"></path>
-							</g>
-						</g>
-					</svg>
-                </div> Click to phone order
+            <a href="tel:{{ site.tel }}" class="w-full flex items-center justify-center px-10 py-4 text-2xl leading-6 font-medium rounded-md text-white hover:text-black border-2 border-yellow hover:border-transparent bg-black hover:bg-white shadow transition duration-150 ease-in-out">
+              <div class="flex items-center justify-center h-12 w-12 text-white">
+                <span class="text-4xl mr-4" role="image" aria-label="telephone">☎️</span>
+            </div> Phone order
             </a>
           </div>
           <div class="mt-3 rounded-md shadow sm:mt-0 sm:ml-3">
-            <a href="#" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:shadow-outline-indigo transition duration-150 ease-in-out md:py-4 md:text-xl md:px-10">
-              <div class="flex items-center justify-center h-12 w-12 text-white text-xl">
-                  <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-						<g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-							<g id="icon-shape">
-								<path d="M11.1735916,16.8264084 C7.57463481,15.3079672 4.69203285,12.4253652 3.17359164,8.82640836 L5.29408795,6.70591205 C5.68612671,6.31387329 6,5.55641359 6,5.00922203 L6,0.990777969 C6,0.45097518 5.55237094,3.33066907e-16 5.00019251,3.33066907e-16 L1.65110039,3.33066907e-16 L1.00214643,8.96910337e-16 C0.448676237,1.13735153e-15 -1.05725384e-09,0.445916468 -7.33736e-10,1.00108627 C-7.33736e-10,1.00108627 -3.44283713e-14,1.97634814 -3.44283713e-14,3 C-3.44283713e-14,12.3888407 7.61115925,20 17,20 C18.0236519,20 18.9989137,20 18.9989137,20 C19.5517984,20 20,19.5565264 20,18.9978536 L20,18.3488996 L20,14.9998075 C20,14.4476291 19.5490248,14 19.009222,14 L14.990778,14 C14.4435864,14 13.6861267,14.3138733 13.2940879,14.7059121 L11.1735916,16.8264084 Z" id="Combined-Shape"></path>
-							</g>
-						</g>
-					</svg>
-                </div> Click to order online
+            <a href="{{ site.squaresite }}" target="_blank" class="w-full flex items-center justify-center px-10 py-4 text-2xl leading-6 font-medium rounded-md text-black hover:text-black border-2 border-black hover:border-transparent bg-yellow hover:bg-white shadow transition duration-150 ease-in-out">
+              <div class="flex items-center justify-center h-12 w-12 text-3xl">
+                  <span class="text-5xl mr-4" role="image" aria-label="shopping trolley">💳</span>
+                </div> Order online
             </a>
           </div>
         </div>
