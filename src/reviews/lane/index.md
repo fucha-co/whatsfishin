@@ -1,6 +1,6 @@
 ---
 tag: reviews
-quote: "i ❤️what's fishin"
+quote: "i ❤️ what's fishin"
 by: lane
 order: 3
 ---
