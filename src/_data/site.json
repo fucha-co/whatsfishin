@@ -1,6 +1,8 @@
 {
     "name": "What's Fishin",
     "blurb": "The best fish & chip shop in Melbourne",
+    "title": "What's Fishin",
+    "desc": "The best fish & chip shop in Melbourne",
     "lang": "en",
     "locale": "en_US",
     "domain": "whatsfishin.com",
@@ -14,5 +16,12 @@
     "tel": "+61394890214",
     "squaresite": "https://whatsfishin.square.site/",
     "phoneorderbtn": "Phone Order",
-    "onlineorderbtn": "Order Online"
+    "onlineorderbtn": "Order Online",
+    "author": {
+        "name": "STOQE",
+        "email": "stoqe@stoqe.com",
+        "url": "https://stoqe.com/",
+        "twitter": "STOQE",
+        "facebook": ""
+    }
 }

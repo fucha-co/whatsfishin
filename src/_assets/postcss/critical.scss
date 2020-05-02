@@ -9,7 +9,7 @@
 mark {padding: 0.25rem 0.5rem}
 
 .bangers { font-family: 'Bangers', sans-serif; }
-.bangers mark {padding: 0.25rem 1rem}
+.bangers mark {padding: 0.5rem 1rem}
 
 .text-huge { font-size: 6rem; }
 @media (min-width: 640px) { .text-huge { font-size: 8rem; } }
@@ -19,6 +19,18 @@ mark {padding: 0.25rem 0.5rem}
 @media (min-width: 1024px) { .text-huge { font-size: 12rem; } }
 /* Extra Large (xl) */
 @media (min-width: 1280px) { .text-huge { font-size: 12rem; } }
+
+.dodger-blue {color: #1098F7;}
+.bg-dodger-blue {background-color: #1098F7;}
+
+.timberwolf {color: #CFD2CD;}
+.bg-timberwolf {background-color: #CFD2CD;}
+
+.bg-grey {background-color: #eee}
+.bg-pink {background-color: pink;}
+
+.plum {color: #D68FD6;}
+.bg-plum {background-color: #D68FD6;}
 
 .text-yellow,
 a:hover.text-yellow { color: yellow; }
