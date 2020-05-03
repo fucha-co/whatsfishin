@@ -10,6 +10,9 @@ module.exports = function htmlMinTransform(value, outputPath) {
     removeComments: true,
     collapseWhitespace: true,
     minifyCSS: false,
+    // custom adds
+    removeAttributeQuotes: false,
+    removeRedundantAttributes: false,
   });
   return minified;
 };

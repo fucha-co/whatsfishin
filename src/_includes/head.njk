@@ -1,6 +1,6 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+<link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
 {% set criticalCss %}
 {% include_raw "_site/ui/css/" + hashes_css['critical.css'] %}
 {% endset %}
@@ -43,7 +43,7 @@
 <!--link rel="webmention" href="https://webmention.io/nicolas-hoizey.com/webmention" /-->
 
 <!--link rel="alternate" type="application/rss+xml" title="Feed for all content on {{ site.name }}" href="/feeds/all.xml" /-->
-<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐟</text></svg>">
+<link rel=icon href='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg" viewBox="0 0 100 100"><text y=".9em" font-size="90">🐟</text></svg>'>
 
 {# ########################################################
  # opengraph and Twitter 
