@@ -63,14 +63,7 @@ module.exports = function (eleventyConfig) {
   // Transforms
   // ------------------------------------------------------------------------
 
-  if (process.env.NODE_ENV === 'production') {
-    const imagesResponsiver = require('eleventy-plugin-images-responsiver');
-    const imagesResponsiverConfig = require('./src/_11ty/images-responsiver-config.js');
-    eleventyConfig.addPlugin(imagesResponsiver, imagesResponsiverConfig);
-
-    //const htmlMinTransform = require('./src/_transforms/html-min-transform.js');
-    //eleventyConfig.addTransform('htmlmin', htmlMinTransform);
-  }
+  
 
     // ------------------------------------------------------------------------
   // Markdown plugins
