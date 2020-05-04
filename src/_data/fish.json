@@ -1,0 +1,53 @@
+{
+  "items": [
+    {
+      "item": "Fish Bite",
+      "desc": "",
+      "options": "Extra crispy, Chicken salt, Regular salt, No salt, Vinegar",
+      "price": "2",
+      "special": ""
+    },
+    {
+      "item": "Salt & Pepper Squid",
+      "desc": "8 pieces fried",
+      "options": "",
+      "price": "8",
+      "special": ""
+    },
+    {
+      "item": "Chilli Squid",
+      "desc": "8 pieces fried",
+      "options": "",
+      "price": "8",
+      "special": ""
+    },
+    {
+      "item": "Flake",
+      "desc": "",
+      "options": "battered, grilled, crumbed, no salt",
+      "price": "9",
+      "special": ""
+    },
+    {
+      "item": "Barramundi",
+      "desc": "Grilled",
+      "options": "",
+      "price": "10",
+      "special": ""
+    },
+    {
+      "item": "Flathead Fillet",
+      "desc": "fried",
+      "options": "",
+      "price": "3",
+      "special": "4 for $10"
+    },
+    {
+      "item": "salmon",
+      "desc": "grilled",
+      "options": "",
+      "price": "12",
+      "special": ""
+    }
+  ]
+}

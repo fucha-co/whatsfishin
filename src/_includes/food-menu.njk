@@ -1,0 +1,59 @@
+<div class="my-6 py-2 mx-auto max-w-screen-lg px-4 sm:px-6">
+    <div class="bg-white shadow overflow-hidden sm:rounded-lg">
+
+        {% if fish.items %}
+            <div class="px-4 py-5 border-b border-gray-200 sm:px-6">
+                <h3 class="bangers text-4xl leading-6 font-medium text-gray-900">
+                Fish Menu &nbsp;🐟
+                </h3>
+                <!--p class="mt-1 max-w-2xl text-sm leading-5 text-gray-500">
+                What's Fishin
+                </p-->
+            </div>
+            <div class="px-4 py-5 sm:px-6">
+                <dl class="grid grid-cols-1 col-gap-6 row-gap-8 sm:grid-cols-2">
+                    {% for item in fish.items %}
+                        <div class="sm:col-span-1">
+                            <dt class="text-lg leading-5 font-bold text-black capitalize">
+                            {{ item.item }} ... ${{ item.price }} {% if item.special %}<mark>{{ item.special }}</mark>{% endif %}
+                            </dt>
+                            <dd class="mt-1 text-sm leading-5 text-gray-900 capitalize">
+                            {% if item.desc %}{{ item.desc }}{% endif %}
+                            {% if item.options %}<span class="text-sm text-gray-500">{{ item.options }}</span>{% endif %}
+                            </dd>
+                        </div>
+                    {% endfor %}
+                </dl>
+            </div>
+        {% endif %}
+
+        {% if burger.items %}
+            <div class="mt-5 px-4 py-5 border-b border-t border-gray-200 sm:px-6">
+                <h3 class="bangers text-4xl leading-6 font-medium text-gray-900">
+                Burger Menu &nbsp;🍔
+                </h3>
+                <!--p class="mt-1 max-w-2xl text-md leading-5 text-gray-500">
+                Bun Options: GF Bun (+$3)<br>
+                Add an extra patty (+$4): Beef , Chicken, Fish, Vegan<br>
+                Extra extras: Beetroot ($1), Egg ($1), Onion (.50c), Pineapple ($1), THE LOT ($2), Onion Rings ($1), Bacon ($3), Avocado ($3)
+                </p-->
+            </div>
+            <div class="px-4 py-5 sm:px-6">
+                <dl class="grid grid-cols-1 col-gap-6 row-gap-8 sm:grid-cols-2">
+                    {% for item in burger.items %}
+                        <div class="sm:col-span-1">
+                            <dt class="text-lg leading-5 font-bold text-black capitalize">
+                            {{ item.item }} ... ${{ item.price }} {% if item.special %}<mark>{{ item.special }}</mark>{% endif %}
+                            </dt>
+                            <dd class="mt-1 text-sm leading-5 text-gray-900 capitalize">
+                            {% if item.desc %}{{ item.desc }}{% endif %}
+                            {% if item.options %}<span class="text-sm text-gray-500">{{ item.options }}</span>{% endif %}
+                            </dd>
+                        </div>
+                    {% endfor %}
+                </dl>
+            </div>
+        {% endif %}
+
+    </div>
+</div>
