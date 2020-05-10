@@ -1,0 +1,20 @@
+{
+  "items": [
+    {
+      "item": "Sweet Potato & Quinoa",
+      "emoji": "🌱🥗",
+      "desc": "Roast Sweet Potato, Red Quinoa, Roast Capsicum, Chim Churri Dressing, Spring Onion, Rocket, Salt & Pepper",
+      "options": "",
+      "price": "5-$8",
+      "special": "Vegan, Gluten, Nut, Dairy & Egg Free"
+    },
+    {
+      "item": "Raw Vegetable",
+      "emoji": "🥗",
+      "desc": "Crumbed Calamari, Avocado, Carrot, Cucumber, Capsicum, Chilli, Herbs",
+      "options": "",
+      "price": "5-$8",
+      "special": ""
+    }
+  ]
+}
