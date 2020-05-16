@@ -6,7 +6,8 @@
       "desc": "beef, Letttuce, Tomato, Cheese, Pickle, Sauce, Egg, Beetroot, Pineapple",
       "options": "",
       "price": "7",
-      "special": ""
+      "special": "",
+      "note": ""
     },
     {
       "item": "beef",
@@ -14,7 +15,8 @@
       "desc": "beef, Letttuce, Tomato, Cheese, Pickle, Sauce, Egg, Beetroot, Pineapple",
       "options": "",
       "price": "9",
-      "special": ""
+      "special": "",
+      "note": ""
     },
     {
       "item": "veggie",
@@ -22,7 +24,8 @@
       "desc": "veggie pattie, Letttuce, Tomato, Cheese, Pickle, Sauce, Egg, Beetroot, Pineapple",
       "options": "",
       "price": "11",
-      "special": ""
+      "special": "",
+      "note": ""
     },
     {
       "item": "fish",
@@ -30,7 +33,8 @@
       "desc": "fish, Letttuce, Tomato, Cheese, Pickle, Sauce, Egg, Beetroot, Pineapple",
       "options": "",
       "price": "11",
-      "special": ""
+      "special": "",
+      "note": ""
     },
     {
       "item": "the lot",
@@ -38,7 +42,8 @@
       "desc": "beef, Letttuce, Tomato, Cheese, Pickle, Sauce, Egg, Beetroot, Pineapple",
       "options": "",
       "price": "11",
-      "special": ""
+      "special": "",
+      "note": ""
     },
     {
       "item": "chicken",
@@ -46,7 +51,8 @@
       "desc": "chicken, Letttuce, Tomato, Cheese, Pickle, Sauce, Egg, Beetroot, Pineapple",
       "options": "",
       "price": "12",
-      "special": ""
+      "special": "",
+      "note": ""
     },
     {
       "item": "salmon",
@@ -54,7 +60,8 @@
       "desc": "",
       "desc": "salmon, Letttuce, Tomato, Cheese, Pickle, Sauce, Egg, Beetroot, Pineapple",
       "price": "15",
-      "special": ""
+      "special": "",
+      "note": ""
     }
   ]
 }

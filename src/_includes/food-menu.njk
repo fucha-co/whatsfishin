@@ -1,108 +1,189 @@
-<div class="my-6 py-2 mx-auto max-w-screen-lg px-4 sm:px-6">
+
+<div id="menu" class="my-6 py-2 mx-auto max-w-screen-lg px-4 sm:px-6">
+    
     <div class="bg-white shadow overflow-hidden sm:rounded-lg">
 
-        {% if fish.items %}
-            <div class="px-4 py-5 border-b border-gray-200 sm:px-6">
-                <h3 class="bangers text-4xl leading-6 font-medium text-gray-900">
-                Fish 🐟
-                </h3>
-                <!--p class="mt-1 max-w-2xl text-sm leading-5 text-gray-500">
-                What's Fishin
-                </p-->
-            </div>
-            <div class="px-4 py-5 sm:px-6">
-                <dl class="grid grid-cols-1 col-gap-6 row-gap-8 sm:grid-cols-2">
-                    {% for item in fish.items %}
-                        <div class="sm:col-span-1">
-                            <dt class="text-lg leading-5 font-bold text-black capitalize">
-                            {{ item.emoji }} &nbsp;{{ item.item }} ... ${{ item.price }}
-                            </dt>
-                            <dd class="mt-1 text-sm leading-5 text-gray-900">
-                                {% if item.special %}
-                                    <mark class="font-bold text-black">{{ item.special }}</mark>
-                                {% endif %}
-                                {% if item.desc %}
-                                    <span class="capitalize">{{ item.desc }}</span>
-                                {% endif %} 
-                                {% if item.options %}
-                                    <span class="text-gray-700">{{ item.options }}</span>
-                                {% endif %}
-                            </dd>
-                        </div>
-                    {% endfor %}
-                </dl>
-            </div>
-        {% endif %}
+        <!-- Initalise Alpine.js with an array of foodtypes, and a variable to store the selected foodtype -->
 
-        {% if burger.items %}
-            <div class="mt-5 px-4 py-5 border-b border-t border-gray-200 sm:px-6">
-                <h3 class="bangers text-4xl leading-6 font-medium text-gray-900">
-                Burgers 🍔
-                </h3>
-                <!--p class="mt-1 max-w-2xl text-md leading-5 text-gray-500">
-                Bun Options: GF Bun (+$3)<br>
-                Add an extra patty (+$4): Beef , Chicken, Fish, Vegan<br>
-                Extra extras: Beetroot ($1), Egg ($1), Onion (.50c), Pineapple ($1), THE LOT ($2), Onion Rings ($1), Bacon ($3), Avocado ($3)
-                </p-->
-            </div>
-            <div class="px-4 py-5 sm:px-6">
-                <dl class="grid grid-cols-1 col-gap-6 row-gap-8 sm:grid-cols-2">
-                    {% for item in burger.items %}
-                        <div class="sm:col-span-1">
-                            <dt class="text-lg leading-5 font-bold text-black capitalize">
-                            {{ item.emoji }} &nbsp;{{ item.item }} ... ${{ item.price }}
-                            </dt>
-                            <dd class="mt-1 text-sm leading-5 text-gray-900">
-                                {% if item.special %}
-                                    <mark class="font-bold text-black">{{ item.special }}</mark>
-                                {% endif %}
-                                {% if item.desc %}
-                                    <span class="capitalize">{{ item.desc }}</span>
-                                {% endif %} 
-                                {% if item.options %}
-                                    <span class="text-gray-700">{{ item.options }}</span>
-                                {% endif %}
-                            </dd>
-                        </div>
-                    {% endfor %}
-                </dl>
-            </div>
-        {% endif %}
+        <div class="m4" x-data="{ foodArray: ['🐟 fish','🍔 burgers','🥗 salads','🍟 sides'], selectedFoodType: null}">
 
-        {% if salad.items %}
-            <div class="mt-5 px-4 py-5 border-b border-t border-gray-200 sm:px-6">
-                <h3 class="bangers text-4xl leading-6 font-medium text-gray-900">
-                Salads 🥗
-                </h3>
-                <!--p class="mt-1 max-w-2xl text-md leading-5 text-gray-500">
-                Bun Options: GF Bun (+$3)<br>
-                Add an extra patty (+$4): Beef , Chicken, Fish, Vegan<br>
-                Extra extras: Beetroot ($1), Egg ($1), Onion (.50c), Pineapple ($1), THE LOT ($2), Onion Rings ($1), Bacon ($3), Avocado ($3)
-                </p-->
+            <div>
+                <div class="bangers block">
+                    <div class="border-b border-gray-200">
+                        <nav class="-mb-px flex">
+                            <!-- Start with a "Show all" tag that is selected by default -->
+                                <a href="#"
+                                    x-text="'🐟🍔🥗🍟 Full Menu'"
+                                    @click.prevent="selectedFoodType = null, console.log('selectedFoodType = everything')" 
+                                    class="w-1/2 py-4 px-1 text-center border-b-2 font-medium text-lg sm:text-3xl leading-5 text-indigo-600 border-indigo-500" 
+                                    :class="{ 'bg-white focus:outline-none focus:border-indigo-500' : selectedFoodType == null }"
+                                    aria-current="page">
+                                Full Menu
+                                </a>
+                            <!--a href="#" class="w-1/4 py-4 px-1 text-center border-b-2 border-transparent font-medium text-sm leading-5 text-gray-500 hover:text-gray-700 hover:border-gray-300 focus:outline-none focus:text-gray-700 focus:border-gray-300">
+                            Fish
+                            </a-->
+                            <!-- Loop through the foodtype array and create clickable tags. When a tag is active, add classes for pink text & borders. -->
+                            <template x-for="foodItem in foodArray" :key="foodItem">
+                                <a
+                                href="#"
+                                class="w-1/4 py-4 px-1 text-center border-b-2 font-medium text-lg sm:text-3xl leading-5 text-gray-500 bg-gray-200 hover:text-indigo-600 hover:border-gray-300 focus:outline-none focus:text-gray-700 focus:border-gray-300"
+                                :class="{ 'focus:bg-white focus:outline-none focus:text-indigo-600 focus:border-gray-300 focus:border-t-2' : selectedFoodType == foodItem }"
+                                x-text="foodItem"
+                                @click.prevent="selectedFoodType = foodItem, console.log('selectedFoodType = '+selectedFoodType)"
+                                >    
+                                </a>
+                            </template>
+                        </nav>
+                    </div>
+                </div>
             </div>
-            <div class="px-4 py-5 sm:px-6">
-                <dl class="grid grid-cols-1 col-gap-6 row-gap-8 sm:grid-cols-2">
-                    {% for item in salad.items %}
-                        <div class="sm:col-span-1">
-                            <dt class="text-lg leading-5 font-bold text-black capitalize">
-                            {{ item.emoji }} &nbsp;{{ item.item }} ... ${{ item.price }}
-                            </dt>
-                            <dd class="mt-1 text-sm leading-5 text-gray-900">
-                                {% if item.desc %}
-                                    <span class="capitalize">{{ item.desc }}</span>
-                                {% endif %} 
-                                {% if item.options %}
-                                    <span class="text-gray-700">{{ item.options }}</span>
-                                {% endif %}
-                                {% if item.special %}
-                                    <span class="font-bold text-black">({{ item.special }})</span>
-                                {% endif %}
-                            </dd>
-                        </div>
-                    {% endfor %}
-                </dl>
-            </div>
-        {% endif %}
+
+            {% if fish.items %}
+                <div x-show="selectedFoodType == null || selectedFoodType == '🐟 fish'" class="mt-1 px-4 py-5 border-b border-gray-200 sm:px-6">
+                    <h3 class="bangers text-4xl leading-6 font-medium text-gray-900">
+                    Fish 🐟
+                    </h3>
+                    <!--p class="mt-1 max-w-2xl text-sm leading-5 text-gray-500">
+                    What's Fishin
+                    </p-->
+                </div>
+                <div x-show="selectedFoodType == null || selectedFoodType == '🐟 fish'" class="border-b border-gray-200 px-4 py-5 sm:px-6">
+                    <dl class="grid grid-cols-1 col-gap-16 row-gap-6 sm:grid-cols-2">
+                        {% for item in fish.items %}
+                            <div class="flex flex-wrap leading-none">
+                                <div class="flex-initial mr-3 text-xl font-bold text-black capitalize">{{ item.emoji }}</div>
+                                <div class="flex-1">
+                                    <div class="inline-flex w-full flex-wrap">
+                                        <div class="flex-initial text-xl capitalize">{{ item.item }}</div>
+                                        <div class="flex-grow border-b border-b-4 border-dotted border-gray-400 mx-1 h-5"></div>
+                                        <div class="w-full text-gray-700 leading-tight py-2">{{ item.desc }} <span class="italic">{{ item.options }}</span></div>
+                                    </div>
+                                </div>
+                                <div class="flex-initial text-xl">${{ item.price }}</div>
+                            </div>
+                        {% endfor %}
+                            <!--div class="sm:col-span-1">
+                                <dt class="text-xl leading-5 font-bold text-black capitalize">
+                                {{ item.emoji }} &nbsp;{{ item.item }} ... ${{ item.price }}
+                                </dt>
+                                <dd class="mt-1 text-md leading-5 text-gray-900">
+                                    {% if item.special %}
+                                        <mark class="font-bold text-black">{{ item.special }}</mark>
+                                    {% endif %}
+                                    {% if item.desc %}
+                                        <span class="capitalize">{{ item.desc }}</span>
+                                    {% endif %} 
+                                    {% if item.options %}
+                                        <span class="italic text-gray-700 capitalize">options: {{ item.options }}</span>
+                                    {% endif %}
+                                    {#% if item.combo %}
+                                        <span class="text-gray-700">{{ item.combo }}</span>
+                                    {% endif %#}
+                                </dd>
+                            </div-->
+                        
+                    </dl>
+                </div>
+            {% endif %}
+
+            {% if burger.items %}
+                <div x-show="selectedFoodType == null || selectedFoodType == '🍔 burgers'" class="mt-5 px-4 py-5 border-b border-gray-200 sm:px-6">
+                    <h3 class="bangers text-4xl leading-6 font-medium text-gray-900">
+                    Burgers 🍔
+                    </h3>
+                </div>
+                <div x-show="selectedFoodType == null || selectedFoodType == '🍔 burgers'" class="px-4 py-5 sm:px-6">
+                    <dl class="grid grid-cols-1 col-gap-16 row-gap-8 sm:grid-cols-2">
+                        {% for item in burger.items %}
+                            <div class="flex flex-wrap leading-none">
+                                <div class="flex-initial mr-3 text-xl font-bold text-black capitalize">{{ item.emoji }}</div>
+                                <div class="flex-1">
+                                    <div class="inline-flex w-full flex-wrap">
+                                        <div class="flex-initial text-xl capitalize">{{ item.item }}</div>
+                                        <div class="flex-grow border-b border-b-4 border-dotted border-gray-400 mx-1 h-5"></div>
+                                        <div class="w-full text-gray-700 leading-tight py-2">{{ item.desc }} <span class="italic">{{ item.options }}</span></div>
+                                    </div>
+                                </div>
+                                <div class="flex-initial text-xl">${{ item.price }}</div>
+                            </div>
+                            <!--div class="sm:col-span-1">
+                                <dt class="text-lg leading-5 font-bold text-black capitalize">
+                                {{ item.emoji }} &nbsp;{{ item.item }} ... ${{ item.price }}
+                                </dt>
+                                <dd class="mt-1 text-sm leading-5 text-gray-900">
+                                    {% if item.special %}
+                                        <mark class="font-bold text-black">{{ item.special }}</mark>
+                                    {% endif %}
+                                    {% if item.desc %}
+                                        <span class="capitalize">{{ item.desc }}</span>
+                                    {% endif %} 
+                                    {% if item.options %}
+                                        <span class="italic text-gray-700">{{ item.options }}</span>
+                                    {% endif %}
+                                </dd>
+                            </div-->
+                        {% endfor %}
+                    </dl>
+                    <p class="mt-1 max-w-2xl text-md leading-5 text-gray-500">
+                    ➕ Bun Options: GF Bun (+$3)<br>
+                    ➕ Add an extra patty to your burger for $4 (Beef , Chicken, Fish, Vegan) <br>
+                    ➕ Add extra extra too: Beetroot ($1), Egg ($1), Onion (.50c), Pineapple ($1), THE LOT ($2), Onion Rings ($1), Bacon ($3), Avocado ($3)
+                    </p>
+                </div>
+            {% endif %}
+
+            {% if salad.items %}
+                <div x-show="selectedFoodType == null || selectedFoodType == '🥗 salads'"  class="mt-5 px-4 py-5 border-b border-t border-gray-200 sm:px-6">
+                    <h3 class="bangers text-4xl leading-6 font-medium text-gray-900">
+                    Salads 🥗
+                    </h3>
+                    <!--p class="mt-1 max-w-2xl text-md leading-5 text-gray-500">
+                    Bun Options: GF Bun (+$3)<br>
+                    Add an extra patty (+$4): Beef , Chicken, Fish, Vegan<br>
+                    Extra extras: Beetroot ($1), Egg ($1), Onion (.50c), Pineapple ($1), THE LOT ($2), Onion Rings ($1), Bacon ($3), Avocado ($3)
+                    </p-->
+                </div>
+                <div x-show="selectedFoodType == null || selectedFoodType == '🥗 salads'"  class="px-4 py-5 sm:px-6">
+                    <dl class="grid grid-cols-1 col-gap-16 row-gap-8 sm:grid-cols-2">
+                        {% for item in salad.items %}
+                            <div class="flex flex-wrap leading-none">
+                                <div class="flex-initial mr-3 text-xl font-bold text-black capitalize">{{ item.emoji }}</div>
+                                <div class="flex-1">
+                                    <div class="inline-flex w-full flex-wrap">
+                                        <div class="flex-initial text-xl capitalize">{{ item.item }}</div>
+                                        <div class="flex-grow border-b border-b-4 border-dotted border-gray-400 mx-1 h-5"></div>
+                                        <div class="w-full text-gray-700 leading-tight py-2">{{ item.desc }} <span class="italic">{{ item.options }}</span></div>
+                                    </div>
+                                </div>
+                                <div class="flex-initial text-xl">${{ item.price }}</div>
+                            </div>
+                            <!--div class="sm:col-span-1">
+                                <dt class="text-lg leading-5 font-bold text-black capitalize">
+                                {{ item.emoji }} &nbsp;{{ item.item }} ... ${{ item.price }}
+                                </dt>
+                                <dd class="mt-1 text-sm leading-5 text-gray-900">
+                                    {% if item.desc %}
+                                        <span class="capitalize">{{ item.desc }}</span>
+                                    {% endif %} 
+                                    {% if item.options %}
+                                        <span class="italic text-gray-700">{{ item.options }}</span>
+                                    {% endif %}
+                                    {% if item.special %}
+                                        <span class="font-bold text-black">({{ item.special }})</span>
+                                    {% endif %}
+                                    {% if item.note %}
+                                        <br><mark class="font-bold text-black">{{ item.note }}</mark>
+                                    {% endif %}
+                                </dd>
+                            </div-->
+                        {% endfor %}
+                    </dl>
+                </div>
+            {% endif %}
+
+        </div>
 
     </div>
+
 </div>
