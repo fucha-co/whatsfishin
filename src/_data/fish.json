@@ -12,25 +12,25 @@
     {
       "item": "Flathead Fillet",
       "emoji": "🐟",
-      "desc": "fried",
+      "desc": "",
       "options": "",
       "price": "3",
       "combo": "",
       "special": "4 for $10"
     },
     {
-      "item": "Salt & Pepper Squid",
+      "item": "Salt & Pepper Squid (8pcs)",
       "emoji": "🦑",
-      "desc": "8 pieces fried",
+      "desc": "",
       "options": "",
       "price": "8",
       "combo": "",
       "special": ""
     },
     {
-      "item": "Chilli Squid",
+      "item": "Chilli Squid (5pcs)",
       "emoji": "🦑",
-      "desc": "5 pieces fried",
+      "desc": "",
       "options": "",
       "price": "8",
       "combo": "",
@@ -48,7 +48,7 @@
     {
       "item": "Barramundi",
       "emoji": "🐟",
-      "desc": "Grilled",
+      "desc": "",
       "options": "",
       "price": "10",
       "combo": "Small Chips + Salad (+$5), Rice + Salad (+$5)",
@@ -57,7 +57,7 @@
     {
       "item": "salmon",
       "emoji": "🐟",
-      "desc": "grilled",
+      "desc": "",
       "options": "",
       "price": "12",
       "combo": "",

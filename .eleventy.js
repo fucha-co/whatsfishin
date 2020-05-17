@@ -183,7 +183,7 @@ module.exports = function (eleventyConfig) {
   // eleventyConfig.setQuietMode(true);
 
   eleventyConfig.setBrowserSyncConfig({
-    ui: false,
+    ui: true,
     ghostMode: false,
   });
 

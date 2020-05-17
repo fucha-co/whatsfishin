@@ -1,65 +1,38 @@
 {
   "items": [
     {
-      "item": "Fish Bite",
-      "emoji": "🐟",
-      "desc": "",
-      "options": "Extra crispy, Chicken salt, Regular salt, No salt, Vinegar",
-      "price": "2",
+      "item": "onion rings (6pcs)",
+      "emoji": "🧅",
+      "desc": "* Current shop website says '10 pieces' in title but '6 pieces' in the description?",
+      "options": "",
+      "price": "4",
       "combo": "",
       "special": ""
     },
     {
-      "item": "Flathead Fillet",
-      "emoji": "🐟",
-      "desc": "fried",
-      "options": "",
-      "price": "3",
-      "combo": "",
-      "special": "4 for $10"
-    },
-    {
-      "item": "Salt & Pepper Squid",
-      "emoji": "🦑",
-      "desc": "8 pieces fried",
+      "item": "Chilli & Chips",
+      "emoji": "🌶️",
+      "desc": "",
       "options": "",
       "price": "8",
       "combo": "",
       "special": ""
     },
     {
-      "item": "Chilli Squid",
-      "emoji": "🦑",
-      "desc": "5 pieces fried",
+      "item": "Sweet Potato Chips",
+      "emoji": "🍠",
+      "desc": "Sm $6 · Med $8 · Lg $10 · XL $12",
       "options": "",
-      "price": "8",
+      "price": "6-$12",
       "combo": "",
       "special": ""
     },
     {
-      "item": "Flake",
-      "emoji": "🐟",
-      "desc": "",
-      "options": "battered, grilled, crumbed, no salt",
-      "price": "9",
-      "combo": "",
-      "special": ""
-    },
-    {
-      "item": "Barramundi",
-      "emoji": "🐟",
-      "desc": "Grilled",
+      "item": "Potato Chips",
+      "emoji": "🍟",
+      "desc": "Sm $4 · Med $6 · Lg $8 · XL $10",
       "options": "",
-      "price": "10",
-      "combo": "Small Chips + Salad (+$5), Rice + Salad (+$5)",
-      "special": ""
-    },
-    {
-      "item": "salmon",
-      "emoji": "🐟",
-      "desc": "grilled",
-      "options": "",
-      "price": "12",
+      "price": "6-$12",
       "combo": "",
       "special": ""
     }
