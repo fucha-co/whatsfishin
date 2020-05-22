@@ -3,7 +3,7 @@
     {
       "item": "onion rings (6pcs)",
       "emoji": "🧅",
-      "desc": "* Current shop website says '10 pieces' in title but '6 pieces' in the description?",
+      "desc": "",
       "options": "",
       "price": "4",
       "combo": "",
@@ -21,18 +21,18 @@
     {
       "item": "Sweet Potato Chips",
       "emoji": "🍠",
-      "desc": "Sm $6 · Med $8 · Lg $10 · XL $12",
+      "desc": "$8/M · $10/LG · $12/XL",
       "options": "",
-      "price": "6-$12",
+      "price": "6",
       "combo": "",
       "special": ""
     },
     {
       "item": "Potato Chips",
       "emoji": "🍟",
-      "desc": "Sm $4 · Med $6 · Lg $8 · XL $10",
+      "desc": "$6/M · $8/L · $12/XL",
       "options": "",
-      "price": "6-$12",
+      "price": "4",
       "combo": "",
       "special": ""
     }

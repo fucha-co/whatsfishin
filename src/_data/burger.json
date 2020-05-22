@@ -3,7 +3,7 @@
     {
       "item": "cheese",
       "emoji": "🍔",
-      "desc": "beef, Letttuce, Tomato, Cheese, Pickle, Sauce, Egg, Beetroot, Pineapple",
+      "desc": "Beef, Double Cheese, Tomato Sauce",
       "options": "",
       "price": "7",
       "special": "",
@@ -12,7 +12,7 @@
     {
       "item": "beef",
       "emoji": "🍔",
-      "desc": "beef, Letttuce, Tomato, Cheese, Pickle, Sauce, Egg, Beetroot, Pineapple",
+      "desc": "beef, Lettuce, Cheese, Tomato, Pickle, Sauce",
       "options": "",
       "price": "9",
       "special": "",
@@ -21,7 +21,7 @@
     {
       "item": "veggie",
       "emoji": "🍔",
-      "desc": "veggie pattie, Letttuce, Tomato, Cheese, Pickle, Sauce, Egg, Beetroot, Pineapple",
+      "desc": "Vegan Patty, Lettuce, Tomato, Cheese, Pickle, Sweet Chilli Sauce",
       "options": "",
       "price": "11",
       "special": "",
@@ -30,7 +30,7 @@
     {
       "item": "fish",
       "emoji": "🍔",
-      "desc": "fish, Letttuce, Tomato, Cheese, Pickle, Sauce, Egg, Beetroot, Pineapple",
+      "desc": "fish, Lettuce, Tomato, Cheese, Pickle, Tartare",
       "options": "",
       "price": "11",
       "special": "",
@@ -39,7 +39,7 @@
     {
       "item": "the lot",
       "emoji": "🍔",
-      "desc": "beef, Letttuce, Tomato, Cheese, Pickle, Sauce, Egg, Beetroot, Pineapple",
+      "desc": "beef, Lettuce, Tomato, Cheese, Pickle, Beetroot, Egg, Pineapple, Sauce",
       "options": "",
       "price": "11",
       "special": "",
@@ -48,7 +48,7 @@
     {
       "item": "chicken",
       "emoji": "🍔",
-      "desc": "chicken, Letttuce, Tomato, Cheese, Pickle, Sauce, Egg, Beetroot, Pineapple",
+      "desc": "Chicken, Lettuce, Tomato, Cheese, Pickle, Secret Mayo",
       "options": "",
       "price": "12",
       "special": "",
@@ -58,7 +58,7 @@
       "item": "salmon",
       "emoji": "🍔",
       "desc": "",
-      "desc": "salmon, Letttuce, Tomato, Cheese, Pickle, Sauce, Egg, Beetroot, Pineapple",
+      "desc": "salmon, Lettuce, Tomato, Cheese, Pickle, Tartare",
       "price": "15",
       "special": "",
       "note": ""
