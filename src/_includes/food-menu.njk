@@ -11,7 +11,7 @@
                 Initalise Alpine.js with an array of foodtypes, and a variable to store the selected foodtype 
             -->
 
-            <div class="m4" x-data="{ foodArray: ['🍟 sides','🥗 salads','🍔 burgers','&nbsp;🐟 fish&nbsp;&nbsp;'], selectedFoodType: null}">
+            <div class="m4" x-data="{ foodArray: ['🍟 sides','🥗 salads','🍔 burgers','&nbsp;🐟 fish&nbsp;&nbsp;','🧳 packs'], selectedFoodType: null}">
 
                 <div class="">
                     <div class="bangers block">
@@ -82,9 +82,9 @@
                                     <div class="flex-initial mr-3 text-xl font-bold text-black capitalize">{{ item.emoji }}</div>
                                     <div class="flex-1">
                                         <div class="inline-flex w-full flex-wrap">
-                                            <div class="flex-initial text-xl capitalize">{{ item.item }}</div>
+                                            <div class="flex-initial text-xl capitalize">{{ item.item }} Burger</div>
                                             <div class="flex-grow border-b border-b-4 border-dotted border-gray-400 mx-1 h-5"></div>
-                                            <div class="w-full text-gray-700 leading-tight py-2 capitalize">{{ item.desc }} <!--span class="uppercase text-xs">Options: {{ item.options }}</span--></div>
+                                            <div class="w-full text-gray-700 leading-tight py-2 capitalize">{{ item.desc }}. <!--span class="uppercase text-xs">Options: {{ item.options }}</span--></div>
                                         </div>
                                     </div>
                                     <div class="flex-initial text-xl">${{ item.price }}</div>
@@ -156,6 +156,36 @@
                                     <div class="flex-1">
                                         <div class="inline-flex w-full flex-wrap">
                                             <div class="flex-initial text-xl capitalize">{{ item.item }}</div>
+                                            <div class="flex-grow border-b border-b-4 border-dotted border-gray-400 mx-1 h-5"></div>
+                                            <div class="w-full text-gray-700 leading-tight py-2 capitalize">{{ item.desc }} <!--span class="uppercase text-xs">Options: {{ item.options }}</span--></div>
+                                        </div>
+                                    </div>
+                                    <div class="flex-initial text-xl">${{ item.price }}</div>
+                                </div>
+                            {% endfor %}
+                        </dl>
+                    </div>
+                {% endif %}
+
+                {% if pack.items %}
+                    <div x-show="selectedFoodType == null || selectedFoodType == '🧳 packs'"  class="mt-1 px-4 py-5 border-b border-gray-200 sm:px-6">
+                        <h3 class="bangers text-4xl leading-6 font-medium text-gray-900">
+                        Packs 🧳
+                        </h3>
+                        <!--p class="mt-1 max-w-2xl text-md leading-5 text-gray-500">
+                        Bun Options: GF Bun (+$3)<br>
+                        Add an extra patty (+$4): Beef , Chicken, Fish, Vegan<br>
+                        Extra extras: Beetroot ($1), Egg ($1), Onion (.50c), Pineapple ($1), THE LOT ($2), Onion Rings ($1), Bacon ($3), Avocado ($3)
+                        </p-->
+                    </div>
+                    <div x-show="selectedFoodType == null || selectedFoodType == '🧳 packs'"  class="border-b border-gray-200 px-4 py-5 sm:px-6">
+                        <dl class="grid grid-cols-1 col-gap-16 row-gap-8 sm:grid-cols-2">
+                            {% for item in pack.items %}
+                                <div class="flex flex-wrap leading-none">
+                                    <div class="flex-initial mr-3 text-xl font-bold text-black capitalize">{{ item.emoji }}</div>
+                                    <div class="flex-1">
+                                        <div class="inline-flex w-full flex-wrap">
+                                            <div class="flex-initial text-xl capitalize">{{ item.item }} Pack</div>
                                             <div class="flex-grow border-b border-b-4 border-dotted border-gray-400 mx-1 h-5"></div>
                                             <div class="w-full text-gray-700 leading-tight py-2 capitalize">{{ item.desc }} <!--span class="uppercase text-xs">Options: {{ item.options }}</span--></div>
                                         </div>
