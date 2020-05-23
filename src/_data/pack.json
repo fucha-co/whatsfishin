@@ -3,7 +3,7 @@
     {
       "item": "snack",
       "emoji": "🧳",
-      "desc": "Fish Bite, Dim Sim, Calamari Ring, plus Chips!",
+      "desc": "Fish Bite + Dim Sim + Calamari Ring + Chips!",
       "options": "",
       "price": "8",
       "special": "",
@@ -12,7 +12,7 @@
     {
       "item": "classic",
       "emoji": "🧳",
-      "desc": "Fillet of Fish plus Chips",
+      "desc": "Fillet of Fish + Chips",
       "options": "",
       "price": "12",
       "special": "",
@@ -21,7 +21,7 @@
     {
       "item": "grill salmon",
       "emoji": "🧳",
-      "desc": "Grilled Salmon plus a SuperSalad!",
+      "desc": "Grilled Salmon + a SuperSalad!",
       "options": "",
       "price": "15",
       "special": "",
@@ -30,7 +30,7 @@
     {
       "item": "double up",
       "emoji": "🧳",
-      "desc": "2 Fillet of Fish, 2 Dim Sim, 2 Calamari Rings, plus Chips!",
+      "desc": "2 Fillet of Fish + 2 Dim Sim + 2 Calamari Rings + Chips!",
       "options": "",
       "price": "27",
       "special": "",
@@ -39,7 +39,7 @@
     {
       "item": "all in",
       "emoji": "🧳",
-      "desc": "4 Flake, 4 Potato Cakes, 4 Dim Sims, 4 Calamari Rings, plus Chips!",
+      "desc": "4 Flake + 4 Potato Cakes + 4 Dim Sims + 4 Calamari Rings + Chips!",
       "options": "",
       "price": "55",
       "special": "",
