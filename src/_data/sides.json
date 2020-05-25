@@ -1,11 +1,128 @@
 {
   "items": [
     {
+      "item": "pickled onion",
+      "emoji": "🧅",
+      "desc": "",
+      "options": "",
+      "price": "1",
+      "combo": "",
+      "special": ""
+    },
+    {
+      "item": "dim sim",
+      "emoji": "🤤",
+      "desc": "",
+      "options": "",
+      "price": "1.5-2.5",
+      "combo": "",
+      "special": ""
+    },
+    {
+      "item": "patatoe cake",
+      "emoji": "🥔",
+      "desc": "",
+      "options": "",
+      "price": "1.5",
+      "combo": "",
+      "special": ""
+    },
+    {
+      "item": "calamari ring",
+      "emoji": "🦑",
+      "desc": "",
+      "options": "",
+      "price": "1.5",
+      "combo": "",
+      "special": ""
+    },
+    {
+      "item": "pineapple fritter",
+      "emoji": "🍍",
+      "desc": "",
+      "options": "",
+      "price": "2",
+      "combo": "",
+      "special": ""
+    },
+    {
+      "item": "tempura prawn",
+      "emoji": "🍤",
+      "desc": "",
+      "options": "",
+      "price": "2",
+      "combo": "",
+      "special": ""
+    },
+    {
+      "item": "crab stick",
+      "emoji": "🦀",
+      "desc": "",
+      "options": "",
+      "price": "2",
+      "combo": "",
+      "special": ""
+    },
+    {
+      "item": "scallop",
+      "emoji": "🤤",
+      "desc": "",
+      "options": "",
+      "price": "2.5",
+      "combo": "",
+      "special": ""
+    },
+    {
+      "item": "spring roll",
+      "emoji": "🤤",
+      "desc": "",
+      "options": "",
+      "price": "3.5",
+      "combo": "",
+      "special": ""
+    },
+    {
+      "item": "corn jack",
+      "emoji": "🤤",
+      "desc": "",
+      "options": "",
+      "price": "3.5",
+      "combo": "",
+      "special": ""
+    },
+    {
+      "item": "burger in batter",
+      "emoji": "🤤",
+      "desc": "",
+      "options": "",
+      "price": "3.5",
+      "combo": "",
+      "special": ""
+    },
+    {
       "item": "onion rings (6pcs)",
       "emoji": "🧅",
       "desc": "",
       "options": "",
       "price": "4",
+      "combo": "",
+      "special": ""
+    },
+    {
+      "item": "chiko roll",
+      "emoji": "🤤",
+      "desc": "",
+      "options": "",
+      "price": "4",
+      "combo": "",
+      "special": ""
+    },
+    {
+      "item": "biltong",
+      "emoji": "🤤",
+      "desc": "",
+      "options": "",
+      "price": "5",
       "combo": "",
       "special": ""
     },

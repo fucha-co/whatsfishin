@@ -11,7 +11,7 @@
                 Initalise Alpine.js with an array of foodtypes, and a variable to store the selected foodtype 
             -->
 
-            <div class="m4" x-data="{ foodArray: ['🍟 sides','🥗 salads','🍔 burgers','&nbsp;🐟 fish&nbsp;&nbsp;','🧳 packs'], selectedFoodType: null}">
+            <div class="m4" x-data="{ foodArray: ['🍟 sides','🥗 salads','🍔 burgers','&nbsp;🐟 fish&nbsp;&nbsp;','🧳 packs','🍛 curry'], selectedFoodType: null}">
 
                 <div class="">
                     <div class="bangers block">
@@ -20,7 +20,7 @@
                                 <!-- Start with a "Show all" tag that is selected by default -->
                                     <a  href="#"
                                         @click.prevent="selectedFoodType = null, console.log('selectedFoodType = everything')" 
-                                        class="w-1/2 py-4 px-1 text-center border-b-2 border-indigo-500 font-medium text-lg sm:text-3xl leading-5 text-indigo-600" 
+                                        class="flex-1 py-4 px-1 text-center border-b-2 border-indigo-500 font-medium text-lg sm:text-3xl leading-5 text-indigo-600" 
                                         :class="{'bg-white focus:outline-none focus:border-indigo-500' : selectedFoodType == null }"
                                         aria-current="page">
                                         <!--span class="hidden sm:inline" x-text="'🐟🍔🥗🍟 '"></span--> Full <br class="inline sm:hidden">Menu
@@ -29,7 +29,7 @@
                                     <template x-for="foodItem in foodArray" :key="foodItem">
                                         <a
                                         href="#"
-                                        class="w-1/4 py-4 px-1 text-center border-b-2 font-medium text-lg sm:text-3xl leading-5 text-gray-500 bg-gray-200 hover:text-indigo-600 hover:border-gray-300 focus:outline-none focus:text-gray-700 focus:border-gray-300"
+                                        class="flex-1 py-4 px-1 text-center border-b-2 font-medium text-lg sm:text-3xl leading-5 text-gray-500 bg-gray-200 hover:text-indigo-600 hover:border-gray-300 focus:outline-none focus:text-gray-700 focus:border-gray-300"
                                         :class="{ 'focus:bg-white focus:outline-none focus:text-indigo-600 focus:border-indigo-500 focus:border-t-2' : selectedFoodType == foodItem }"
                                         x-text="foodItem"
                                         @click.prevent="selectedFoodType = foodItem, console.log('selectedFoodType = '+selectedFoodType)"
@@ -44,7 +44,10 @@
                 {% if fish.items %}
                     <div x-show="selectedFoodType == null || selectedFoodType == '&nbsp;🐟 fish&nbsp;&nbsp;'" class="mt-1 px-4 py-5 border-b border-gray-200 sm:px-6">
                         <h3 class="bangers text-4xl leading-6 font-medium text-gray-900">
-                        Fish 🐟
+                            Fish <span class="text-4xl">🐟</span> 
+                            <br class="inline sm:hidden">
+                            <span class="text-2xl sm:text-4xl text-gray-500">
+                            fresh!</span>
                         </h3>
                         <!--p class="mt-1 max-w-2xl text-sm leading-5 text-gray-500">
                         What's Fishin
@@ -72,7 +75,10 @@
                 {% if burger.items %}
                     <div x-show="selectedFoodType == null || selectedFoodType == '🍔 burgers'" class="mt-1 px-4 py-5 border-b border-gray-200 sm:px-6">
                         <h3 class="bangers text-4xl leading-6 font-medium text-gray-900">
-                        Burgers 🍔
+                            Burgers <span class="text-4xl">🍔</span> 
+                            <br class="inline sm:hidden">
+                            <span class="text-2xl sm:text-4xl text-gray-500">
+                            the best!</span>
                         </h3>
                     </div>
                     <div x-show="selectedFoodType == null || selectedFoodType == '🍔 burgers'" class="border-b border-gray-200 px-4 py-5 sm:px-6">
@@ -170,7 +176,10 @@
                 {% if pack.items %}
                     <div x-show="selectedFoodType == null || selectedFoodType == '🧳 packs'"  class="mt-1 px-4 py-5 border-b border-gray-200 sm:px-6">
                         <h3 class="bangers text-4xl leading-6 font-medium text-gray-900">
-                        Packs 🧳
+                            Packs <span class="text-4xl">🧳</span> 
+                            <br class="inline sm:hidden">
+                            <span class="text-2xl sm:text-4xl text-gray-500">
+                             value plus</span>
                         </h3>
                         <!--p class="mt-1 max-w-2xl text-md leading-5 text-gray-500">
                         Bun Options: GF Bun (+$3)<br>
@@ -197,6 +206,38 @@
                     </div>
                 {% endif %}
 
+                {% if curry.items %}
+                    <div x-show="selectedFoodType == null || selectedFoodType == '🍛 curry'"  class="mt-1 px-4 py-5 border-b border-gray-200 sm:px-6">
+                        <h3 class="bangers text-4xl leading-6 font-medium text-gray-900">
+                            Curry <span class="text-5xl">🍛</span> 
+                            <br class="inline sm:hidden">
+                            <span class="text-2xl sm:text-4xl text-gray-500">
+                            Served w/ Basmati Rice</span>
+                        </h3>
+                        <!--p class="mt-1 max-w-2xl text-md leading-5 text-gray-500">
+                        Bun Options: GF Bun (+$3)<br>
+                        Add an extra patty (+$4): Beef , Chicken, Fish, Vegan<br>
+                        Extra extras: Beetroot ($1), Egg ($1), Onion (.50c), Pineapple ($1), THE LOT ($2), Onion Rings ($1), Bacon ($3), Avocado ($3)
+                        </p-->
+                    </div>
+                    <div x-show="selectedFoodType == null || selectedFoodType == '🍛 curry'"  class="border-b border-gray-200 px-4 py-5 sm:px-6">
+                        <dl class="grid grid-cols-1 col-gap-16 row-gap-8 sm:grid-cols-2">
+                            {% for item in curry.items %}
+                                <div class="flex flex-wrap leading-none">
+                                    <div class="flex-initial mr-3 text-xl font-bold text-black capitalize">{{ item.emoji }}</div>
+                                    <div class="flex-1">
+                                        <div class="inline-flex w-full flex-wrap">
+                                            <div class="flex-initial text-xl capitalize">{{ item.item }}</div>
+                                            <div class="flex-grow border-b border-b-4 border-dotted border-gray-400 mx-1 h-5"></div>
+                                            <div class="w-full text-gray-700 leading-tight py-2 capitalize">{{ item.desc }} <!--span class="uppercase text-xs">Options: {{ item.options }}</span--></div>
+                                        </div>
+                                    </div>
+                                    <div class="flex-initial text-xl">${{ item.price }}</div>
+                                </div>
+                            {% endfor %}
+                        </dl>
+                    </div>
+                {% endif %}
             </div>
 
         </div>

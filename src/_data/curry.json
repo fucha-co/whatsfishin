@@ -1,0 +1,49 @@
+{
+  "items": [
+    {
+      "item": "salmon niryani",
+      "emoji": "🍛",
+      "desc": "",
+      "options": "",
+      "price": "11",
+      "special": "",
+      "note": ""
+    },
+    {
+      "item": "veggie curry",
+      "emoji": "🍛",
+      "desc": "",
+      "options": "",
+      "price": "12",
+      "special": "",
+      "note": ""
+    },
+    {
+      "item": "fish curry",
+      "emoji": "🍛",
+      "desc": "",
+      "options": "",
+      "price": "12",
+      "special": "",
+      "note": ""
+    },
+    {
+      "item": "chicken curry",
+      "emoji": "🍛",
+      "desc": "",
+      "options": "",
+      "price": "13.5",
+      "special": "",
+      "note": ""
+    },
+    {
+      "item": "lamb curry",
+      "emoji": "🍛",
+      "desc": "",
+      "options": "",
+      "price": "13.5",
+      "special": "",
+      "note": ""
+    }
+  ]
+}
