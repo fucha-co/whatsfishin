@@ -4,12 +4,11 @@
 {% include "head.njk" %}
 </head>
 
-  <body class="border-8 border-yellow" data-img-src="{{ page.inputPath | dirname }}/" data-img-dist="{{ page.outputPath | dirname }}/">
+  <body class="border-0 sm:border-8 border-yellow" data-img-src="{{ page.inputPath | dirname }}/" data-img-dist="{{ page.outputPath | dirname }}/">
 
   <div class="mx-auto max-w-screen-lg px-4 sm:px-6 pb-10"
 
     {% include "hero.njk" %}
-    {#% include "search.njk" %#}
     {% include "food-menu.njk" %}
     {% include 'reviews.njk' %}
     {% include "footer.njk" %}

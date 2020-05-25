@@ -37,6 +37,15 @@
       "special": ""
     },
     {
+      "item": "chicken nuggets",
+      "emoji": "🐔",
+      "desc": "",
+      "options": "",
+      "price": "1.5",
+      "combo": "",
+      "special": "10 for $10"
+    },
+    {
       "item": "pineapple fritter",
       "emoji": "🍍",
       "desc": "",
@@ -78,8 +87,8 @@
       "desc": "",
       "options": "",
       "price": "2.5",
-      "combo": "5 for $10",
-      "special": ""
+      "combo": "",
+      "special": "5 for $10"
     },
     {
       "item": "banana fritter",
