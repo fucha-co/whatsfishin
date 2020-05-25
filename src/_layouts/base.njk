@@ -4,7 +4,9 @@
 {% include "head.njk" %}
 </head>
 
-  <body data-img-src="{{ page.inputPath | dirname }}/" data-img-dist="{{ page.outputPath | dirname }}/">
+  <body class="border-8 border-yellow" data-img-src="{{ page.inputPath | dirname }}/" data-img-dist="{{ page.outputPath | dirname }}/">
+
+  <div class="mx-auto max-w-screen-lg px-4 sm:px-6 pb-10"
 
     {% include "hero.njk" %}
     {#% include "search.njk" %#}
@@ -12,6 +14,8 @@
     {% include 'reviews.njk' %}
     {% include "footer.njk" %}
     {#% include "menu.njk" %#}
+
+  </div>
 
     <!--iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.05196295787!2d144.9956173149873!3d-37.78882197975694!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad6430cf0450d91%3A0xb10479909bd6b789!2sWhat&#39;s%20Fishin!5e0!3m2!1sen!2sau!4v1588168675155!5m2!1sen!2sau" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe-->
 
