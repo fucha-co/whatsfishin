@@ -19,7 +19,7 @@
       "special": ""
     },
     {
-      "item": "patatoe cake",
+      "item": "potato cake",
       "emoji": "🥔",
       "desc": "",
       "options": "",
@@ -70,6 +70,15 @@
       "options": "",
       "price": "2.5",
       "combo": "",
+      "special": ""
+    },
+    {
+      "item": "chicken drumstick",
+      "emoji": "🍗",
+      "desc": "",
+      "options": "",
+      "price": "2.5",
+      "combo": "5 for $10",
       "special": ""
     },
     {
