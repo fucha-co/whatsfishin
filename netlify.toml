@@ -9,3 +9,9 @@
   to = "https://www.whatsfishin.com"
   status = 301
   force = true
+
+[[redirects]]
+  from = "https://www.whatsfishin.com/stats"
+  to = "https://app.usefathom.com/share/hzqhraoa/whatsfishin.com"
+  status = 301
+  force = true
